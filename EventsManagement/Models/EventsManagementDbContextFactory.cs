@@ -9,7 +9,6 @@ namespace EventsManagement.Models
         {
             var optionsBuilder = new DbContextOptionsBuilder<EventsManagementDbContext>();
 
-            // Replace with your actual connection string
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\rluci\\source\\repos\\EventsManagement\\EventsManagement\\db\\events-management.mdf;Integrated Security=True;Connect Timeout=30");
 
             return new EventsManagementDbContext(optionsBuilder.Options);
